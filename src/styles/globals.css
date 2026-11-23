@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+@variant dark (&:where(.dark, .dark *));
+@import 'tw-animate-css';
+@source '../';
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+  }
+
+  :root {
+    --background: var(--color-neutral-50);
+    --foreground: var(--color-neutral-900);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(0 0% 3.9%);
+    --popover: hsl(0 0% 100%);
+    --popover-foreground: hsl(0 0% 3.9%);
+    --primary: #3b76f6;
+    --primary-foreground: hsl(0 0% 100%);
+    --secondary: hsl(0 0% 96.1%);
+    --secondary-foreground: hsl(0 0% 9%);
+    --muted: hsl(0 0% 96.1%);
+    --muted-foreground: hsl(0 0% 45.1%);
+    --accent: hsl(0 0% 96.1%);
+    --accent-foreground: hsl(0 0% 9%);
+    --destructive: hsl(0 84.2% 60.2%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --border: hsl(0 0% 89.8%);
+    --input: hsl(0 0% 89.8%);
+    --ring: #3b76f6;
+    --chart-1: hsl(12 76% 61%);
+    --chart-2: hsl(173 58% 39%);
+    --chart-3: hsl(197 37% 24%);
+    --chart-4: hsl(43 74% 66%);
+    --chart-5: hsl(27 87% 67%);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: hsl(240 5% 6%);
+    --foreground: hsl(240 5% 85%);
+    --card: hsl(240 5% 10%);
+    --card-foreground: hsl(240 5% 90%);
+    --popover: hsl(240 5% 10%);
+    --popover-foreground: hsl(240 5% 90%);
+    --primary: #3b76f6;
+    --primary-foreground: hsl(0 0% 100%);
+    --secondary: hsl(240 5% 13%);
+    --secondary-foreground: hsl(240 5% 90%);
+    --muted: hsl(240 5% 13%);
+    --muted-foreground: hsl(240 5% 60%);
+    --accent: hsl(240 5% 13%);
+    --accent-foreground: hsl(240 5% 90%);
+    --destructive: hsl(0 62.8% 30.6%);
+    --destructive-foreground: hsl(0 0% 98%);
+    --border: hsl(240 5% 15%);
+    --input: hsl(240 5% 15%);
+    --ring: #609afa;
+    --chart-1: hsl(220 70% 50%);
+    --chart-2: hsl(160 60% 45%);
+    --chart-3: hsl(30 80% 55%);
+    --chart-4: hsl(280 65% 60%);
+    --chart-5: hsl(340 75% 55%);
+  }
+
+  /* Accent-color theming (Tier 3 step 15). Each accent overrides the default
+     brand primary/ring in both light and dark. `:root[data-accent]` outranks the
+     `.dark` block so the accent wins regardless of the active mode. The
+     `default` accent has no rule — it keeps the brand primary above. */
+  :root[data-accent='blue'] {
+    --primary: #3b76f6;
+    --primary-foreground: hsl(0 0% 100%);
+    --ring: #3b76f6;
+  }
+  :root[data-accent='violet'] {
+    --primary: hsl(262 83% 58%);
+    --primary-foreground: hsl(0 0% 100%);
+    --ring: hsl(262 83% 58%);
+  }
+  :root[data-accent='green'] {
+    --primary: hsl(142 71% 45%);
+    --primary-foreground: hsl(0 0% 100%);
+    --ring: hsl(142 71% 45%);
+  }
+  :root[data-accent='rose'] {
+    --primary: hsl(347 77% 50%);
+    --primary-foreground: hsl(0 0% 100%);
+    --ring: hsl(347 77% 50%);
+  }
+  :root[data-accent='amber'] {
+    --primary: hsl(38 92% 50%);
+    --primary-foreground: hsl(0 0% 9%);
+    --ring: hsl(38 92% 50%);
+  }
+}

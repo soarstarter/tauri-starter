@@ -1,0 +1,273 @@
+{
+  "appName": "Tauri Starter",
+  "actions": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "refresh": "Refresh"
+  },
+  "menu": {
+    "file": "File",
+    "template": "Template",
+    "edit": "Edit",
+    "view": "View",
+    "window": "Window",
+    "help": "Help",
+    "home": "Home",
+    "openFile": "Open File",
+    "openShowcase": "Open Showcase",
+    "openFileDemo": "Open File Demo",
+    "settings": "Settings",
+    "about": "About",
+    "showLogs": "Show Logs",
+    "homepage": "Homepage",
+    "actualSize": "Actual Size",
+    "zoomIn": "Zoom In",
+    "zoomOut": "Zoom Out"
+  },
+  "tray": {
+    "openMainWindow": "Open Main Window",
+    "settings": "Settings",
+    "about": "About",
+    "quit": "Quit"
+  },
+  "nav": {
+    "workspace": "Workspace",
+    "template": "Template",
+    "application": "Application",
+    "home": "Home",
+    "showcase": "Showcase",
+    "components": "Components",
+    "files": "Files",
+    "logs": "Logs",
+    "help": "Help",
+    "settings": "Settings",
+    "about": "About"
+  },
+  "header": {
+    "commandPalette": "Search and run commands",
+    "toggleSidebar": "Toggle sidebar"
+  },
+  "banner": {
+    "offline": "You're offline. Some features may not work until your connection returns."
+  },
+  "palette": {
+    "title": "Command palette",
+    "description": "Search for a page, setting, or recent file to jump to.",
+    "placeholder": "Search pages, settings, recent files…",
+    "groups": {
+      "suggestions": "Suggestions",
+      "navigation": "Navigation",
+      "settings": "Settings",
+      "recent": "Recent files",
+      "showcase": "Showcase"
+    },
+    "empty": {
+      "title": "No matching commands.",
+      "help": "Open Help"
+    }
+  },
+  "onboarding": {
+    "step": "Step {{current}} of {{total}}",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Get started",
+    "welcome": {
+      "title": "Welcome to {{app}}",
+      "description": "A quick tour of what's set up and ready to use."
+    },
+    "highlights": {
+      "title": "What's inside",
+      "items": {
+        "workspace": {
+          "title": "A ready workspace",
+          "description": "Routing, settings, logging, and a command palette are wired in."
+        },
+        "local": {
+          "title": "Works offline",
+          "description": "No account and no backend: your settings stay on this device."
+        },
+        "privacy": {
+          "title": "Private by default",
+          "description": "The app sends no network requests on its own."
+        }
+      }
+    },
+    "eula": {
+      "title": "License agreement",
+      "description": "Please review and accept the agreement to continue.",
+      "read": "Read the agreement",
+      "accept": "I have read and agree to the End-User License Agreement."
+    }
+  },
+  "windowControls": {
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "close": "Close"
+  },
+  "home": {
+    "badge": "Desktop starter",
+    "title": "Build from a production-ready shell",
+    "description": "A focused Tauri workspace with routing, settings, a command palette, logging, and secure capability boundaries already in place.",
+    "actions": {
+      "openWorkspace": "Open workspace",
+      "exploreShowcase": "Explore showcase",
+      "configure": "Configure app"
+    },
+    "status": {
+      "shell": {
+        "title": "Desktop shell",
+        "value": "Ready",
+        "description": "Window lifecycle, tray, menus, app intents, and guarded external navigation."
+      },
+      "ui": {
+        "title": "Renderer",
+        "value": "React",
+        "description": "Typed routes, shared UI primitives, responsive layout, and theme-aware styling."
+      },
+      "data": {
+        "title": "Data layer",
+        "value": "Local",
+        "description": "Versioned settings store, backup and restore, and OS-encrypted secure storage."
+      },
+      "delivery": {
+        "title": "Distribution",
+        "value": "Builder",
+        "description": "Platform builds, packaged assets, and build metadata."
+      }
+    },
+    "checklist": {
+      "title": "Launch checklist",
+      "description": "Core starter surfaces included in this workspace.",
+      "badge": "Baseline",
+      "items": {
+        "branding": {
+          "title": "Brand and permissions",
+          "description": "App metadata, icons, entitlements, and external URL policy."
+        },
+        "settings": {
+          "title": "User preferences",
+          "description": "Theme, language, notifications, proxy, shortcuts, and storage controls."
+        },
+        "distribution": {
+          "title": "Build pipeline",
+          "description": "Vite builds, Tauri Builder targets, and app logs."
+        }
+      }
+    },
+    "quickActions": {
+      "title": "Workspace shortcuts",
+      "description": "Jump into the starter modules from one place.",
+      "showcaseTitle": "Capability shortcuts",
+      "showcaseDescription": "Live demos pulled from the showcase catalog.",
+      "items": {
+        "files": {
+          "title": "File editor",
+          "description": "Open the local file workflow."
+        },
+        "logs": {
+          "title": "Diagnostics",
+          "description": "Check the logging surface."
+        },
+        "settings": {
+          "title": "Settings",
+          "description": "Tune app behavior and runtime preferences."
+        },
+        "help": {
+          "title": "Help",
+          "description": "Open support resources and troubleshooting links."
+        }
+      }
+    },
+    "showcase": {
+      "title": "Template capabilities",
+      "description": "Highlights are grouped from the same catalog that powers the Showcase."
+    },
+    "stack": {
+      "title": "Starter stack",
+      "description": "The foundation is intentionally small enough to replace, but complete enough to ship from.",
+      "items": {
+        "Tauri": "Tauri",
+        "react": "React",
+        "typescript": "TypeScript",
+        "tailwind": "Tailwind"
+      }
+    }
+  },
+  "logs": {
+    "title": "Logs",
+    "description": "Diagnostics and log files.",
+    "loading": "Loading log location…",
+    "path": "Log file",
+    "openFolder": "Open log folder",
+    "opened": "Opened the log folder.",
+    "openFailed": "Could not open the log folder.",
+    "pathError": "Could not read the log file path.",
+    "tail": "Recent log entries",
+    "empty": "No log entries yet."
+  },
+  "about": {
+    "title": "About",
+    "sections": {
+      "application": "Application",
+      "system": "System"
+    },
+    "fields": {
+      "name": "Name",
+      "version": "Version",
+      "commit": "Commit",
+      "buildTime": "Build time",
+      "Tauri": "Tauri",
+      "chromium": "Chromium",
+      "node": "Node",
+      "os": "OS",
+      "logPath": "Log file"
+    },
+    "links": {
+      "homepage": "Homepage",
+      "repository": "Repository",
+      "license": "License"
+    },
+    "copyDiagnostics": "Copy diagnostics",
+    "copied": "Diagnostics copied to clipboard.",
+    "copyFailed": "Could not copy diagnostics.",
+    "loadError": "Could not load diagnostics.",
+    "loading": "Loading…"
+  },
+  "help": {
+    "title": "Help",
+    "description": "Documentation, feedback, and bug reports.",
+    "documentation": {
+      "title": "Documentation",
+      "description": "Read the project documentation and guides.",
+      "action": "Open documentation"
+    },
+    "feedback": {
+      "title": "Send feedback",
+      "description": "Share suggestions or report a problem by email.",
+      "action": "Send feedback"
+    },
+    "bug": {
+      "title": "Report a bug",
+      "description": "Open a pre-filled issue on the project tracker.",
+      "action": "Report a bug"
+    },
+    "logs": {
+      "title": "Application logs",
+      "description": "Open the diagnostics page to locate log files.",
+      "action": "View logs"
+    }
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred in the application.",
+    "actions": {
+      "reload": "Reload",
+      "goHome": "Go home",
+      "openLogs": "Open logs",
+      "reportBug": "Report a bug"
+    }
+  }
+}

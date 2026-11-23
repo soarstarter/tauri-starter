@@ -1,0 +1,144 @@
+{
+  "title": "能力展示",
+  "description": "浏览模板能力，以及每个演示背后的源码入口。",
+  "categories": {
+    "shell": "外壳",
+    "system": "系统",
+    "data": "数据",
+    "ops": "运维"
+  },
+  "status": {
+    "live": "可直接运行",
+    "packaged-only": "仅打包后可见",
+    "os-specific": "依系统而异"
+  },
+  "sourceFiles": "源码文件",
+  "actions": {
+    "back": "返回能力展示",
+    "open": "打开演示",
+    "tryAgain": "重试"
+  },
+  "callouts": {
+    "live": "此演示可在开发环境中直接运行,无需额外配置。",
+    "packaged-only": "部分行为只有在打包版本中可见,因为注册流程由操作系统接管。",
+    "os-specific": "行为会随平台变化。演示会展示当前系统暴露的能力。"
+  },
+  "catalog": {
+    "window-state": {
+      "title": "窗口状态",
+      "summary": "通过 Tauri command 窗口 API 持久化并恢复窗口尺寸、全屏状态和窗口控制。"
+    },
+    "titlebar-controls": {
+      "title": "自定义标题栏",
+      "summary": "由渲染进程管理的窗口外壳，支持原生最小化、最大化、关闭和拖拽区域。"
+    },
+    "theme-accent": {
+      "title": "主题与强调色",
+      "summary": "支持亮色、暗色、跟随系统和强调色偏好，并写入应用设置。"
+    },
+    "i18n-switch": {
+      "title": "运行时语言切换",
+      "summary": "使用共享 i18n 资源和持久化语言偏好，在运行中切换界面语言。"
+    },
+    "command-palette": {
+      "title": "命令面板",
+      "summary": "可组合的命令来源，覆盖导航、设置搜索、最近文件和应用自定义操作。"
+    },
+    "components-gallery": {
+      "title": "组件画廊",
+      "summary": "面向开发者的实时组件画廊，展示可复用 UI 组件、常见状态和应用级组合。"
+    },
+    "onboarding-replay": {
+      "title": "重新播放引导",
+      "summary": "欢迎页与引导流程可单独重播，无需重置应用其他状态。"
+    },
+    "tray": {
+      "title": "托盘",
+      "summary": "系统托盘集成，包含平台差异和受设置控制的应用生命周期行为。"
+    },
+    "notifications": {
+      "title": "原生通知",
+      "summary": "通过类型化 Tauri command 桥和主进程通知处理器发送桌面通知。"
+    },
+    "global-shortcuts": {
+      "title": "全局快捷键",
+      "summary": "注册应用级快捷键，并从渲染进程查看当前快捷键映射。"
+    },
+    "file-dialogs": {
+      "title": "文件对话框与最近文件",
+      "summary": "使用原生对话框打开和保存文件，并通过应用设置回显最近文件。"
+    },
+    "deep-links": {
+      "title": "深度链接与应用意图",
+      "summary": "将协议 URL 和启动参数转换为类型化应用意图，用于渲染进程导航。"
+    },
+    "native-menu": {
+      "title": "原生菜单",
+      "summary": "主进程菜单、本地化标签和快捷键与应用导航相连。"
+    },
+    "secure-storage": {
+      "title": "安全存储",
+      "summary": "通过主进程安全存储封装和类型化桥接保存、读取、删除密钥。"
+    },
+    "settings-persistence": {
+      "title": "设置持久化",
+      "summary": "持久化应用偏好、重置设置，并在渲染进程状态中即时反映变更。"
+    },
+    "backup-restore": {
+      "title": "备份与恢复",
+      "summary": "借助原生对话框和主进程备份工具导出、导入本地应用数据。"
+    },
+    "structured-logs": {
+      "title": "结构化日志与脱敏",
+      "summary": "主进程日志、脱敏工具，以及用于诊断的渲染进程日志查看器。"
+    },
+    "diagnostics-report": {
+      "title": "诊断报告",
+      "summary": "生成便于支持排查的报告，包含环境、设置和应用健康信息。"
+    }
+  },
+  "pro": {
+    "title": "Pro 版提供",
+    "description": "这些能力需要后端或发布流水线，因此放在 SoarStarter Pro 中，不在这个开源模板里。",
+    "badge": "Pro",
+    "action": "了解更多",
+    "items": {
+      "email-auth": {
+        "title": "邮箱登录与账户",
+        "summary": "邮箱加密码或验证码登录、资料编辑、头像上传，会话保存在系统钥匙串。"
+      },
+      "unified-backend": {
+        "title": "统一后端",
+        "summary": "由 Rust 调用一套版本化 API，与 SoarStarter Web 端共用账户、数据和收款。"
+      },
+      "synced-data": {
+        "title": "同步数据示例",
+        "summary": "Todos 增删改查示例，可对接 Supabase 或统一后端，并按用户隔离查询失效。"
+      },
+      "checkout": {
+        "title": "结账与订阅",
+        "summary": "Creem 结账和客户门户，订阅状态自动同步。"
+      },
+      "license-keys": {
+        "title": "许可证激活",
+        "summary": "可选的许可证密钥激活流程，叠加在订阅权益之上。"
+      },
+      "feature-gates": {
+        "title": "功能门控",
+        "summary": "面向免费版、专业版和终身版的可复用权益检查与 UI 门控。"
+      },
+      "auto-updates": {
+        "title": "自动更新与发布流水线",
+        "summary": "签名、公证后的发布包，配合自建更新源，带下载进度和安装后重启。"
+      },
+      "error-reporting": {
+        "title": "错误上报",
+        "summary": "可选开启的 Sentry 上报，覆盖 Rust panic 和 WebView 错误，上下文已脱敏。"
+      },
+      "analytics": {
+        "title": "产品分析",
+        "summary": "可选开启的分析插槽，配置端点且用户同意前不会发送任何数据。"
+      }
+    }
+  }
+}

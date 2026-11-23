@@ -1,0 +1,144 @@
+{
+  "title": "Showcase",
+  "description": "Explore the template capabilities and the source files that power each demo.",
+  "categories": {
+    "shell": "Shell",
+    "system": "System",
+    "data": "Data",
+    "ops": "Ops"
+  },
+  "status": {
+    "live": "Live",
+    "packaged-only": "Packaged only",
+    "os-specific": "OS-specific"
+  },
+  "sourceFiles": "Source files",
+  "actions": {
+    "back": "Back to Showcase",
+    "open": "Open demo",
+    "tryAgain": "Try again"
+  },
+  "callouts": {
+    "live": "This demo works in development with no extra setup.",
+    "packaged-only": "Some behavior is only observable in a packaged build because the OS owns registration flows.",
+    "os-specific": "Behavior can vary by platform. The demo shows what this OS exposes right now."
+  },
+  "catalog": {
+    "window-state": {
+      "title": "Window state",
+      "summary": "Persist and restore window bounds, fullscreen state, and window controls through the Tauri command window API."
+    },
+    "titlebar-controls": {
+      "title": "Custom titlebar",
+      "summary": "Renderer-owned window chrome with native minimize, maximize, close, and drag-region behavior."
+    },
+    "theme-accent": {
+      "title": "Theme and accent",
+      "summary": "Live light, dark, system, and accent-color preferences backed by persisted app settings."
+    },
+    "i18n-switch": {
+      "title": "Runtime i18n switch",
+      "summary": "Change languages at runtime using the shared i18n resource bundle and persisted locale preference."
+    },
+    "command-palette": {
+      "title": "Command palette",
+      "summary": "Composable command sources for navigation, settings search, recent files, and app-specific actions."
+    },
+    "components-gallery": {
+      "title": "Components gallery",
+      "summary": "A live developer gallery of reusable UI primitives, common states, and app-level composites."
+    },
+    "onboarding-replay": {
+      "title": "Onboarding replay",
+      "summary": "Welcome and onboarding surfaces that can be replayed without resetting the rest of the app."
+    },
+    "tray": {
+      "title": "Tray",
+      "summary": "System tray integration with platform-specific behavior and settings-aware app lifecycle handling."
+    },
+    "notifications": {
+      "title": "Native notifications",
+      "summary": "Send desktop notifications through a typed Tauri command bridge and Rust notification handler."
+    },
+    "global-shortcuts": {
+      "title": "Global shortcuts",
+      "summary": "Register app-level keyboard shortcuts and inspect the active accelerator map from the renderer."
+    },
+    "file-dialogs": {
+      "title": "File dialogs and recents",
+      "summary": "Open and save files with native dialogs, then surface recent files back through app settings."
+    },
+    "deep-links": {
+      "title": "Deep links and app intents",
+      "summary": "Route protocol URLs and startup arguments into typed app intents for renderer navigation."
+    },
+    "native-menu": {
+      "title": "Native menu",
+      "summary": "Main-process menus, localized labels, and accelerators wired into app navigation."
+    },
+    "secure-storage": {
+      "title": "Secure storage",
+      "summary": "Store, read, and delete secrets via the Rust secure storage wrapper and typed bridge."
+    },
+    "settings-persistence": {
+      "title": "Settings persistence",
+      "summary": "Persist app preferences, reset settings, and reflect changes immediately in renderer state."
+    },
+    "backup-restore": {
+      "title": "Backup and restore",
+      "summary": "Export and import local app data with native dialogs and Rust backup helpers."
+    },
+    "structured-logs": {
+      "title": "Structured logs and redaction",
+      "summary": "Main-process logging, redaction helpers, and a renderer log viewer for diagnostics."
+    },
+    "diagnostics-report": {
+      "title": "Diagnostics report",
+      "summary": "Generate a support-friendly report with environment, settings, and app health details."
+    }
+  },
+  "pro": {
+    "title": "Available in Pro",
+    "description": "These capabilities need a backend or a release pipeline, so they ship in SoarStarter Pro instead of this open-source starter.",
+    "badge": "Pro",
+    "action": "Learn more",
+    "items": {
+      "email-auth": {
+        "title": "Email sign-in and accounts",
+        "summary": "Email sign-in with password or verification code, profile editing, avatar upload, and keychain session storage."
+      },
+      "unified-backend": {
+        "title": "Unified backend",
+        "summary": "Share accounts, data, and billing with the SoarStarter web app through one versioned API, called from Rust."
+      },
+      "synced-data": {
+        "title": "Synced data example",
+        "summary": "A todos CRUD sample that runs against Supabase or the unified backend, with user-scoped query invalidation."
+      },
+      "checkout": {
+        "title": "Checkout and subscriptions",
+        "summary": "Creem checkout and customer portal, with subscription state kept in sync."
+      },
+      "license-keys": {
+        "title": "License key activation",
+        "summary": "Optional license-key activation layered on top of the subscription entitlements."
+      },
+      "feature-gates": {
+        "title": "Feature gates",
+        "summary": "Reusable entitlement checks and UI gates for free, pro, and lifetime plans."
+      },
+      "auto-updates": {
+        "title": "Auto-updates and release pipeline",
+        "summary": "Signed, notarized releases with a self-hosted update feed, download progress, and install and restart."
+      },
+      "error-reporting": {
+        "title": "Error reporting",
+        "summary": "Opt-in Sentry reporting for Rust panics and webview errors, with redacted context."
+      },
+      "analytics": {
+        "title": "Product analytics",
+        "summary": "An opt-in analytics slot that stays inert until an endpoint and user consent exist."
+      }
+    }
+  }
+}

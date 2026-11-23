@@ -1,0 +1,242 @@
+<!doctype html>
+<!--
+  GitHub social preview for this repository (Settings → General → Social preview).
+  Output: 1280x640, the size GitHub recommends. Self-contained apart from the
+  screenshots in ../screenshots/.
+
+  Regenerate the PNG from the repository root:
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+      --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 \
+      --window-size=1280,640 \
+      --screenshot=docs/social-preview/social-preview.png \
+      "file://$(pwd)/docs/social-preview/social-preview.html"
+
+  Colors follow the app icon (resources/build/icon.png): #2563eb -> #38bdf8.
+  The screenshots already include the macOS titlebar, so the windows have no
+  drawn title bar.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1280px;
+        height: 640px;
+      }
+      body {
+        font-family: -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        color: #fafafa;
+        background: #090b10;
+        background-image:
+          radial-gradient(circle at 92% 8%, rgba(56, 189, 248, 0.22), transparent 42%),
+          radial-gradient(circle at 70% 100%, rgba(37, 99, 235, 0.2), transparent 48%),
+          linear-gradient(100deg, #07080c 0%, #090b10 50%, #0a1220 100%);
+        overflow: hidden;
+        position: relative;
+      }
+      .dots {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle, rgba(56, 189, 248, 0.22) 1.2px, transparent 1.2px);
+        background-size: 24px 24px;
+        -webkit-mask-image: radial-gradient(circle at 78% 46%, #000 0%, transparent 46%);
+        opacity: 0.35;
+      }
+
+      /* left column */
+      .left {
+        position: absolute;
+        left: 72px;
+        top: 64px;
+        bottom: 60px;
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+      }
+      .repo {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+        font-size: 22px;
+        color: #94a3b8;
+      }
+      .repo b {
+        color: #e2e8f0;
+        font-weight: 600;
+      }
+      .repo svg {
+        width: 56px;
+        height: 56px;
+        flex: none;
+      }
+      h1 {
+        margin-top: 36px;
+        font-size: 76px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: -0.035em;
+      }
+      h1 span {
+        background: linear-gradient(120deg, #60a5fa 0%, #38bdf8 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .tagline {
+        margin-top: 20px;
+        font-size: 27px;
+        line-height: 1.35;
+        color: #cbd5e1;
+        letter-spacing: -0.005em;
+      }
+      .chips {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        max-width: 540px;
+      }
+      .chip {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 14px;
+        border-radius: 999px;
+        color: #dbeafe;
+        background: rgba(37, 99, 235, 0.16);
+        border: 1px solid rgba(96, 165, 250, 0.32);
+      }
+      .foot {
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 19px;
+        color: #94a3b8;
+      }
+      .foot .mit {
+        font-weight: 700;
+        color: #0b1220;
+        background: #e2e8f0;
+        padding: 4px 10px;
+        border-radius: 6px;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+      }
+      .foot .sep {
+        color: #475569;
+      }
+
+      /* app windows */
+      .win {
+        position: absolute;
+        width: 760px;
+        border-radius: 14px;
+        overflow: hidden;
+        background: #111214;
+        border: 1px solid rgba(148, 163, 184, 0.22);
+        box-shadow:
+          0 40px 90px rgba(0, 0, 0, 0.6),
+          0 0 0 1px rgba(0, 0, 0, 0.5);
+      }
+      .bar {
+        height: 34px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding-left: 14px;
+        background: #18191c;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+      }
+      .bar i {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #ff5f57;
+      }
+      .bar i:nth-child(2) {
+        background: #febc2e;
+      }
+      .bar i:nth-child(3) {
+        background: #28c840;
+      }
+      .bar span {
+        flex: 1;
+        text-align: center;
+        margin-right: 66px;
+        font-size: 13px;
+        color: #9ca3af;
+      }
+      .win img {
+        display: block;
+        width: 100%;
+      }
+      .back {
+        left: 760px;
+        top: 40px;
+        opacity: 0.55;
+      }
+      .front {
+        left: 670px;
+        top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dots"></div>
+
+    <div class="win back">
+      <img src="../screenshots/showcase.png" alt="" />
+    </div>
+    <div class="win front">
+      <img src="../screenshots/home.png" alt="" />
+    </div>
+
+    <div class="left">
+      <div class="repo">
+        <svg viewBox="100 100 824 824" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="150" y1="874" x2="874" y2="150" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#2563eb" />
+              <stop offset="1" stop-color="#38bdf8" />
+            </linearGradient>
+          </defs>
+          <rect x="100" y="100" width="824" height="824" rx="184" fill="url(#g)" />
+          <g
+            transform="translate(-16,-54.5) scale(22)"
+            fill="none"
+            stroke="#ffffff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M14 30.5L24 16L34 30.5" stroke-width="3.4" />
+            <path d="M17.5 35.5L24 26L30.5 35.5" stroke-opacity="0.55" stroke-width="3.4" />
+          </g>
+        </svg>
+        <div>soarstarter / <b>tauri-starter</b></div>
+      </div>
+
+      <h1>Tauri<br /><span>Starter</span></h1>
+      <p class="tagline">An open-source Tauri 2 + React starter that already feels like a finished app.</p>
+
+      <div class="chips">
+        <span class="chip">Type-safe Rust commands</span>
+        <span class="chip">Tray &amp; deep links</span>
+        <span class="chip">Settings center</span>
+        <span class="chip">Command palette</span>
+        <span class="chip">Themes &amp; i18n</span>
+      </div>
+
+      <div class="foot">
+        <span class="mit">MIT</span>
+        <span>Tauri 2</span><span class="sep">·</span><span>React 19</span><span class="sep">·</span
+        ><span>TypeScript</span><span class="sep">·</span><span>Tailwind 4</span>
+      </div>
+    </div>
+  </body>
+</html>

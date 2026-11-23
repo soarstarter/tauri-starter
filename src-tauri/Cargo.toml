@@ -1,0 +1,49 @@
+[package]
+name = "tauri-starter"
+version = "1.0.0"
+description = "Tauri Starter desktop application"
+authors = ["SoarStarter"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+# The `_lib` suffix may seem redundant but it is necessary
+# to make the lib name unique and wouldn't conflict with the bin name.
+# This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
+name = "tauri_starter_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# `tray-icon` + `image-png` back the JS-built `TrayIcon` (Phase 3.5); the tray
+# is created from TS so its labels can reuse i18next, mirroring the Electron
+# template's JS-built tray.
+tauri = { version = "2", features = ["tray-icon", "image-png"] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+specta = { version = "=2.0.0-rc.22", features = ["derive"] }
+specta-typescript = "=0.0.9"
+tauri-specta = { version = "=2.0.0-rc.21", features = ["derive", "typescript"] }
+tauri-plugin-window-state = "2.4.1"
+tauri-plugin-deep-link = "2.4.9"
+tauri-plugin-autostart = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+tauri-plugin-log = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-os = "2"
+tauri-plugin-store = "2"
+keyring = { version = "3", features = ["apple-native", "windows-native", "sync-secret-service", "crypto-rust"] }
+regex = "1"
+
+# Single-instance is a desktop-only concern: the callback focuses the running
+# window and forwards argv to the intent dispatcher. The `deep-link` feature
+# re-emits `tauri-starter://` links opened while the app is already running through the
+# single-instance path on Windows/Linux.
+[target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]
+tauri-plugin-single-instance = { version = "2", features = ["deep-link"] }

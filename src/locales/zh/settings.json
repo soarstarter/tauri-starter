@@ -1,0 +1,131 @@
+{
+  "title": "设置",
+  "description": "应用程序首选项和运行时信息。",
+  "search": {
+    "placeholder": "搜索设置…",
+    "empty": "没有匹配的设置。"
+  },
+  "tabs": {
+    "general": "通用",
+    "appearance": "外观",
+    "notifications": "通知",
+    "shortcuts": "快捷键",
+    "proxy": "代理",
+    "storage": "存储",
+    "advanced": "高级"
+  },
+  "general": {
+    "title": "通用",
+    "description": "语言和启动行为。",
+    "language": {
+      "label": "语言",
+      "description": "选择您偏好的显示语言。",
+      "system": "跟随系统",
+      "en": "English",
+      "zh": "中文"
+    },
+    "launchAtLogin": {
+      "label": "登录时启动",
+      "description": "登录电脑时自动启动应用。"
+    },
+    "minimizeToTray": {
+      "label": "最小化到托盘",
+      "description": "关闭窗口时隐藏到系统托盘而不是退出。"
+    }
+  },
+  "appearance": {
+    "title": "外观",
+    "description": "主题和视觉选项。",
+    "theme": {
+      "label": "主题",
+      "description": "选择浅色、深色或跟随系统的外观。",
+      "current": "当前主题",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "跟随系统"
+    },
+    "accent": {
+      "label": "强调色",
+      "description": "用强调色为按钮和高亮着色。",
+      "options": {
+        "default": "默认",
+        "blue": "蓝色",
+        "violet": "紫色",
+        "green": "绿色",
+        "rose": "玫红",
+        "amber": "琥珀"
+      }
+    }
+  },
+  "notifications": {
+    "title": "通知",
+    "description": "管理来自应用的系统通知。",
+    "enabled": {
+      "label": "启用通知",
+      "description": "为重要事件显示桌面通知。"
+    }
+  },
+  "shortcuts": {
+    "title": "快捷键",
+    "description": "全局和窗口内的键盘快捷键。",
+    "empty": "尚未配置自定义快捷键,使用默认快捷键。",
+    "override": {
+      "placeholder": "默认快捷键"
+    }
+  },
+  "proxy": {
+    "title": "代理",
+    "description": "配置应用如何访问网络。",
+    "mode": {
+      "label": "代理模式",
+      "description": "选择外发请求的路由方式。",
+      "system": "使用系统代理",
+      "none": "直接连接",
+      "custom": "自定义代理"
+    },
+    "url": {
+      "label": "代理地址",
+      "description": "当代理模式为自定义时使用。",
+      "placeholder": "http://host:port"
+    }
+  },
+  "storage": {
+    "title": "存储",
+    "description": "应用数据在本设备上的存储位置。",
+    "dataDir": {
+      "label": "数据目录",
+      "description": "覆盖应用数据的默认位置,留空使用系统默认值。",
+      "placeholder": "默认位置",
+      "clear": "使用默认"
+    },
+    "backup": {
+      "label": "备份与恢复",
+      "description": "将设置导出到文件，或从备份恢复。安全存储中的密钥保留在本设备上，不会包含在内。",
+      "export": "导出设置",
+      "import": "导入设置",
+      "exported": "设置已导出。",
+      "imported": "设置已恢复。",
+      "exportError": "无法导出设置。",
+      "importError": "无法导入设置。",
+      "confirmTitle": "从备份恢复设置?",
+      "confirmDescription": "这将用备份文件中的值替换本设备上的所有设置。安全数据不受影响。",
+      "confirmAction": "选择备份文件"
+    }
+  },
+  "advanced": {
+    "title": "高级",
+    "description": "诊断和恢复工具。",
+    "reset": {
+      "label": "恢复默认设置",
+      "description": "将本设备上的所有设置恢复为默认值。",
+      "button": "恢复默认设置",
+      "confirmTitle": "恢复所有设置?",
+      "confirmDescription": "这将把本设备上的所有设置恢复为默认值。您的数据文件不会受到影响。",
+      "confirmAction": "恢复设置"
+    }
+  },
+  "messages": {
+    "languageChanged": "语言已更新。",
+    "settingsReset": "设置已恢复为默认值。"
+  }
+}

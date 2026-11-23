@@ -1,0 +1,4 @@
+#!/bin/sh
+# Blocks the push when the open-source boundary check fails.
+# Enabled by `pnpm install` through scripts/install-git-hooks.mjs.
+exec pnpm check:lite

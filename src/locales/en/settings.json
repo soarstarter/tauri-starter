@@ -1,0 +1,131 @@
+{
+  "title": "Settings",
+  "description": "Application preferences and runtime information.",
+  "search": {
+    "placeholder": "Search settings…",
+    "empty": "No matching settings."
+  },
+  "tabs": {
+    "general": "General",
+    "appearance": "Appearance",
+    "notifications": "Notifications",
+    "shortcuts": "Shortcuts",
+    "proxy": "Proxy",
+    "storage": "Storage",
+    "advanced": "Advanced"
+  },
+  "general": {
+    "title": "General",
+    "description": "Language and startup behavior.",
+    "language": {
+      "label": "Language",
+      "description": "Choose your preferred display language.",
+      "system": "System default",
+      "en": "English",
+      "zh": "中文"
+    },
+    "launchAtLogin": {
+      "label": "Launch at login",
+      "description": "Start the app automatically when you sign in to your computer."
+    },
+    "minimizeToTray": {
+      "label": "Minimize to tray",
+      "description": "Hide the window to the system tray instead of closing it."
+    }
+  },
+  "appearance": {
+    "title": "Appearance",
+    "description": "Theme and visual options.",
+    "theme": {
+      "label": "Theme",
+      "description": "Pick a light, dark, or system-matched appearance.",
+      "current": "Current theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "accent": {
+      "label": "Accent color",
+      "description": "Tint buttons and highlights with an accent color.",
+      "options": {
+        "default": "Default",
+        "blue": "Blue",
+        "violet": "Violet",
+        "green": "Green",
+        "rose": "Rose",
+        "amber": "Amber"
+      }
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "description": "Control system notifications from this app.",
+    "enabled": {
+      "label": "Enable notifications",
+      "description": "Show desktop notifications for important events."
+    }
+  },
+  "shortcuts": {
+    "title": "Shortcuts",
+    "description": "Global and in-window keyboard shortcuts.",
+    "empty": "No custom shortcuts configured. Default accelerators apply.",
+    "override": {
+      "placeholder": "Default accelerator"
+    }
+  },
+  "proxy": {
+    "title": "Proxy",
+    "description": "Configure how the app reaches the network.",
+    "mode": {
+      "label": "Proxy mode",
+      "description": "Choose how outbound requests are routed.",
+      "system": "Use system proxy",
+      "none": "Direct connection",
+      "custom": "Custom proxy"
+    },
+    "url": {
+      "label": "Proxy URL",
+      "description": "Used when proxy mode is set to Custom.",
+      "placeholder": "http://host:port"
+    }
+  },
+  "storage": {
+    "title": "Storage",
+    "description": "Where app data is stored on this device.",
+    "dataDir": {
+      "label": "Data directory",
+      "description": "Override the default location for app data. Leave blank to use the OS default.",
+      "placeholder": "Default location",
+      "clear": "Use default"
+    },
+    "backup": {
+      "label": "Back up & restore",
+      "description": "Export your settings to a file, or restore them from a backup. Secrets in secure storage stay on this device and are not included.",
+      "export": "Export settings",
+      "import": "Import settings",
+      "exported": "Settings exported.",
+      "imported": "Settings restored.",
+      "exportError": "Could not export settings.",
+      "importError": "Could not import settings.",
+      "confirmTitle": "Restore settings from a backup?",
+      "confirmDescription": "This replaces every setting on this device with the values from the backup file. Secure data is not affected.",
+      "confirmAction": "Choose backup file"
+    }
+  },
+  "advanced": {
+    "title": "Advanced",
+    "description": "Diagnostics and recovery tools.",
+    "reset": {
+      "label": "Reset to defaults",
+      "description": "Restore every setting on this device to its default value.",
+      "button": "Reset to defaults",
+      "confirmTitle": "Reset all settings?",
+      "confirmDescription": "This will restore every setting on this device to its default value. Your data files are not affected.",
+      "confirmAction": "Reset settings"
+    }
+  },
+  "messages": {
+    "languageChanged": "Language updated.",
+    "settingsReset": "Settings restored to defaults."
+  }
+}
