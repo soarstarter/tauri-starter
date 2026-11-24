@@ -1,7 +1,7 @@
 {
   "$schema-note": "Read by scripts/check-lite.mjs (pnpm check:lite) and by the sync skill in the commercial repository. proPaths: never allowed here. sharedFiles: exist in both editions but differ, so syncs must merge them by hand. liteOnlyFiles: written for this edition and never overwritten by a sync, even where the commercial repository has a file at the same path (LICENSE, README.md). generatedFiles: differ in both editions but are never patched or copied; a sync regenerates them (src/lib/bindings.ts with cargo test, src-tauri/Cargo.lock with cargo check, pnpm-lock.yaml with pnpm install). Every other file is identical in both editions at source.lastSyncedCommit.",
   "source": {
-    "lastSyncedCommit": "661e109d67da69bc53f0d4ec6f9f7c569263f652",
+    "lastSyncedCommit": "ac8f762fcd610464d3e3c07088968f014a1f3f11",
     "lastSyncedAt": "2026-11-23"
   },
   "proPaths": [
@@ -48,6 +48,7 @@
     "docs/DESKTOP_AUTH.md",
     "docs/PHASE_*.md",
     "docs/openapi.*",
+    ".gitattributes",
     ".agents/",
     ".claude/",
     "skills-lock.json"
